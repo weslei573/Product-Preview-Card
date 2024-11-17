@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* || RESET */
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* || VARIABLES */
+
+:root {
+    /* FONTS */
+    --FF: "Montserrat", sans-serif;
+    --FF-HEADING: "Fraunces", cursive;
+    --FS: clamp(1rem, 2vh, 1.5rem);
+
+    /* COLORS */
+    --BGCOLOR-FACE: hsl(30, 38%, 92%);
+    --BGCOLOR: hsl(0, 0%, 100%);
+    --BUTTON-COLOR:  hsl(158, 36%, 37%);
+    --HIGHLIGHT-COLOR: hsl(212, 21%, 14%);
+    --FONT-COLOR: hsl(228, 12%, 48%);
+}
+
+/* || UTILITY CLASSES */
+.offscreen {
+    position: absolute;
+    left: -10000px;
+}
+
+/* || GENERAL */
+body {
+    background-color: var(--BGCOLOR-FACE);
+    font-family: var(--FF);
+    font-size: var(--FS);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    display: block;
+    width: 100%;
+    
+}
+
+/* || MAIN */
+.main {
+    background-color: var(--BGCOLOR);
+    max-width: 616px;
+
+}
