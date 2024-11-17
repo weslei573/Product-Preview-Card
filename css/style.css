@@ -17,22 +17,21 @@
 }
 
 body {
-    max-width: 1440px;
-    background-color: hsl(30, 38%, 92%);
-    font-size: 14px;
+    max-width: 100%;
+    background-color: var(--BGCOLOR-FACE);
+    font-size: var(--FS);
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 14px;
 }
 
 .container {
     display: flex;
     align-items: center;
     background-color: hsl(0, 0%, 100%);
-    width: 670px;
-    height: 500px;
+    width: 600px;
+    height: 450px;
     border-radius: 15px;
 }
 
@@ -43,7 +42,7 @@ body {
 }
 
 .imagem img {
-    width: 335px;
+    width: 300px;
     height: 100%;
     display: flex;
     border-top-left-radius: 15px;
@@ -53,16 +52,16 @@ body {
 .left {
     display: flex;
     flex-direction: column;
-    margin: 40px;
+    margin: 30px;
     height: 85%;
-    gap: 27px;
+    gap: 10px;
 }
 
 .cabecalho span {
     font-family: 'Montserrat', sans-serif;
     font-size: 17px;
     text-transform: uppercase;
-    color: hsl(212, 21%, 14%);
+    color: var(--FONT-COLOR);
 }
 
 .left h1 {
@@ -73,7 +72,7 @@ body {
 .left p {
     font-family: 'Montserrat', sans-serif;
     font-size: 17px;
-    color: hsl(212, 21%, 14%);
+    color: var(--FONT-COLOR);
 }
 
 div {
@@ -86,7 +85,8 @@ div {
 .left .letra-g {
     font-family: 'Fraunces', serif;
     font-size: 35px;
-    color: hsl(158, 36%, 37%);
+    font-weight: 700;
+    color: var(--BUTTON-COLOR);
 }
 
 .left .letra-p {
@@ -102,16 +102,16 @@ div {
 }
 
 button {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 14px;
-    background-color: hsl(158, 36%, 37%);
-    color: hsl(0, 0%, 100%);
+    font-family: var(--FF);
+    font-size: 1rem;
+    background-color: var(--BUTTON-COLOR);
+    color: var(--BGCOLOR);
     padding: 15px;
     border: none;
     border-radius: 10px;
     cursor: pointer;
 }
 
-button.modo-alterar {
+button:hover {
     background-color: hsl(151, 41%, 18%);
 }
