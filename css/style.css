@@ -29,7 +29,7 @@ body {
 .container {
     display: flex;
     align-items: center;
-    background-color: hsl(0, 0%, 100%);
+    background-color: var(--BGCOLOR);
     width: 600px;
     height: 450px;
     border-radius: 15px;
@@ -54,24 +54,26 @@ body {
     flex-direction: column;
     margin: 30px;
     height: 85%;
-    gap: 10px;
+    gap: 5px;
 }
 
 .cabecalho span {
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--FF);
     font-size: 17px;
     text-transform: uppercase;
     color: var(--FONT-COLOR);
 }
 
 .left h1 {
-    font-family: 'Fraunces', serif;
+    font-family: var(--FF-HEADING);
+    color: var(--HIGHLIGHT-COLOR);
     font-size: 35px;
 }
 
 .left p {
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--FF);
     font-size: 17px;
+    line-height: 1.5;
     color: var(--FONT-COLOR);
 }
 
@@ -83,16 +85,16 @@ div {
 }
 
 .left .letra-g {
-    font-family: 'Fraunces', serif;
+    font-family: var(--FF-HEADING);
     font-size: 35px;
     font-weight: 700;
     color: var(--BUTTON-COLOR);
 }
 
 .left .letra-p {
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--FF);
     font-size: 14px;
-    color: hsl(212, 21%, 14%);
+    color: var(--FONT-COLOR);
 }
 
 .but {
