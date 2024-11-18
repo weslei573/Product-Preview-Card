@@ -10,3 +10,8 @@
     position: relative;
     left: -10000px;
 }
+
+a {
+    text-decoration: none;
+    color: var(--HIGHLIGHT-COLOR);
+}
