@@ -1,12 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
-
-img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-}
-
 /* || VARIABLES */
 
 :root {
@@ -48,17 +41,18 @@ p {
 .main {
     background-color: var(--BGCOLOR);
     display: flex;
-    flex-direction: column;
-    max-width: 345px;
-    height: 615px;
-    border-radius: 10px;
+    flex-flow: row nowrap;
+    width: 600px;
+    height: 450px;
+    border-radius: 8px;
 }
 
 /* || HERO IMAGE */
 
 .hero img {
     border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    height: 100%;
 }
 
 /* || LEFT */
@@ -66,8 +60,8 @@ p {
 .left {
     display: flex;
     flex-direction: column;
-    margin: 25px;
-    gap: 15px;
+    margin: 30px;
+    gap: 25px;
 }
 
 .left__top {
