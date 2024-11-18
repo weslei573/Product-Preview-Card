@@ -50,8 +50,8 @@ p {
 /* || HERO IMAGE */
 
 .hero img {
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
     height: 100%;
 }
 
