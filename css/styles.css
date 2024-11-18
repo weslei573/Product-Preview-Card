@@ -1,12 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
 /* || VARIABLES */
 
 :root {
     /* FONTS */
     --FF: "Montserrat", sans-serif;
     --FF-HEADING: "Fraunces", cursive;
-    --FS: clamp(1rem, 2vh, 1.5rem);
+    --FS: 0.875rem;
+    --FW: 700;
 
     /* COLORS */
     --BGCOLOR-FACE: hsl(30, 38%, 92%);
@@ -16,13 +24,96 @@
     --HIGHLIGHT-COLOR: hsl(212, 21%, 14%);
 }
 
+html {
+    font-family: var(--FF);
+    font-weight: 500;
+}
+
 body {
     max-width: 100%;
     height: 100vh;
     background-color: var(--BGCOLOR-FACE);
     color: var(--FONT-COLOR);
-    font-size: var(--FS);
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+span,
+p {
+    font-size: var(--FS);
+}
+
+/* || MAIN */
+.main {
+    background-color: var(--BGCOLOR);
+    display: flex;
+    flex-direction: column;
+    max-width: 345px;
+    height: 615px;
+    border-radius: 10px;
+}
+
+/* || HERO IMAGE */
+
+.hero img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+/* || LEFT */
+
+.left {
+    display: flex;
+    flex-direction: column;
+    margin: 25px;
+    gap: 15px;
+}
+
+.left__top {
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+}
+
+.left__h1,
+.letra-g {
+    color: var(--HIGHLIGHT-COLOR);
+    font-family: var(--FF-HEADING);
+    font-size: 2em;
+    font-weight: var(--FW);
+    line-height: 1;
+}
+
+.left__p {
+    line-height: 1.6;
+}
+
+.left__item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.letra-g {
+    color: var(--BUTTON-COLOR);
+}
+
+.btn {
+    background-color: var(--BUTTON-COLOR);
+    color: var(--BGCOLOR);
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 1em;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.btn:hover,
+.btn:focus {
+    background-color: hsl(151, 41%, 18%);
+}
+
+.btn__p {
+    font-weight: var(--FW);
 }
